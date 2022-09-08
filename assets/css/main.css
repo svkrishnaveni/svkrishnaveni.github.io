@@ -3915,8 +3915,8 @@ input, select, textarea {
 	border-radius: 0.35rem;
 	border: 0;
 	/*display: inline-block;*/
-	display: inline;
-	position: center top;
+	display: block;
+	position: relative;
 }
 
 	.image:before {
@@ -4013,13 +4013,15 @@ input, select, textarea {
 	}
 
 		.image.avatar:before {
-			display: none;
+			display: flex;
 		}
 
 		.image.avatar img {
 			max-width: 100%;
 			border-radius: 100%;
 			width: 60%;
-			margin:-6rem 0 0 0;
+			margin:0 0 0 0;
+			position: relative;
+			bottom: 6rem;
 		}
 
