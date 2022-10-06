@@ -22,6 +22,7 @@
 							<li><a href="#one">Skill set</a></li>
 							<li><a href="#two">Academic Projects</a></li>
 							<li><a href="#three">Work experience</a></li>
+							<li><a href="#five">Blog</a></li>
 							<li><a href="#four">Contact</a></li>
 						</ul>
 					</nav>
@@ -36,20 +37,29 @@
 					<div class="inner">
 						<h1>Sai Venkata Krishnaveni Devarakonda</h1>
 						<div>
-							<div style = "width: 65%;height: 100px;">
+							<div style = "width: 65%;height:100px">
 								<p>Graduate student studying Masters in computer science at UT Arlington with focus on Data Mining, Spatio-temporal Databases and Software Testing.
 									Skilled in python and Java with hands on experience using scikit-learn, Tensorflow and pandas for Data analysis.
 									Excited about opportunities to utilize machine learning in real world context.</p>	
+								
+							</div>
+							<div style="margin-left: 70%;">
+								<a href="#" class="image avatar" ><img src="images/Profile_pic.JPG" alt="" /></a>
+							</div>	
+							<div style="margin-left: 73%;">								
+								<a href="/Resume/Krishnaveni_Resume_2022.pdf" read >View Resume </a>
+								<br/>
+								<a href="/Resume/Krishnaveni_Resume_2022.pdf" download ">Download Resume</a>
+							</div>
+							<div>
+								<ul class="actions">
+									<li><a href="#one" class="button scrolly">Learn more</a></li>
+								</ul>
 							</div>
 						</div>
-						<div style="margin-left: 70%; height: 250px;">
-							<a href="#" class="image avatar"><img src="images/Profile_pic.JPG" alt="" /></a>
-						</div>					
-						<a href="/Resume/Krishnaveni_Resume_2022.pdf" read style="margin-left: 73%;">View Resume</a>
-						<a href="/Resume/Krishnaveni_Resume_2022.pdf" download style="margin-left: 73%;">Download Resume</a>
-						<ul class="actions">
-							<li><a href="#one" class="button scrolly">Learn more</a></li>
-						</ul>
+						
+															
+						
 					</div>
 				</section>
 				<!-- One -->
@@ -166,7 +176,59 @@
 					</section>
 				</section>
 
-			
+			<!-- Five -->
+			<section id="five" class="wrapper style4 fade-up">
+				<div class="inner">
+					<h2>Kaggle Competitions</h2>
+						<div class="features">
+							<div>
+								<ol><li>
+										<h3>Titanic - Machine Learning from Disaster</h3>
+											Built two predictive models that answers the question: 
+											<i>“what sorts of people were more likely to survive?” using passenger data (ie name, age, gender, socio-economic class, etc).</i>
+											<br/> <br/> 
+											<ol>
+												<li>										
+													<b>With RandomForestClasssifier:	</b>									
+													Implemented a predictive model for titanic disaster to predict the passenger survival rate using RandomForestClasssifier
+													<br>Kaggle Score: <span style="color:rgb(249, 249, 8)">0.77511</span>
+													<br><br>
+													<a href="http://127.0.0.1:5500/Codes/RandomForest_titianic.html" readonly>View code in Jupyter-notebook </a>
+
+												</li>
+												<br>
+												<li>										
+													<b>With XGBoostClasssifier:	</b>									
+													Implemented a predictive model for titanic disaster to predict the passenger survival rate using XGBoostClasssifier with tuned hyperparameters 
+													<br>Kaggle Score: <span style="color:rgb(249, 249, 8)">0.77990</span>										
+													<br/>
+													<dl>
+														<dt>
+															<span style="color:rgb(249, 124, 8)">Contribution:</span>
+														</dt>
+														<dd>
+															<ol>
+																<li>Visualized the relationship between each feature with class</li>
+																<li>Identified 3 more useful features other than used features in  RandomForestClasssifier </li>
+																<li>Converted string values of features('Sex', 'Embarked') to numberic values by using replace()</li>
+																<li>Tuned hyperparameters (n_estimators, learning_rate, max_depth, colsample_bytree) by using grid search for XGBoost hyperparameters.
+																	<br><span style="color:rgb(249, 249, 8)">Credit :</span> <a href="https://towardsdatascience.com/xgboost-fine-tune-and-optimize-your-model-23d996fab663">towardsdatascience</a>
+																</li>
+															</ol>
+														</dd>
+													</dl>
+													<a href="http://127.0.0.1:5500/Codes/XGBoost_model_titanic.html">View code in Jupyter-notebook </a>
+												</li>
+											</ol>
+											<b>Programming Language:</b> Python </p>
+											<a href="https://github.com/svkrishnaveni/Kaggle-Competition---Titanic---Machine-Learning-from-Disaster">Click here for code </a>
+										</li></ol>	
+
+								</div>
+						</div>
+				</div>
+			</section>
+
 
 			<!-- Four -->
 				<section id="four" class="wrapper style1 fade-up">
@@ -197,6 +259,9 @@
 						</div>
 					</div>
 				</section>
+
+
+			
 
 		</div>
 
