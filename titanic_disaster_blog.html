@@ -1,0 +1,53 @@
+<center><h1>Titanic - Machine Learning from Disaster</h1></center
+<p><h3>Challange:</h3>&emsp;&emsp;&emsp; Build a predictive model that answers the question:"what sorts of people were more likely to survive?" 
+    using passenger data(ie name, age, gender, socio-economic class, etc).</p>
+
+<p><h3>Dataset Description:</h3>&emsp;&emsp;&emsp; The data has split into two groups:
+    <ul>
+        <li><dl><dt><b>training set(train.csv)</b></dt>
+            <dd>This .csv file contains passengers data(ie Passengerid, Pclass, Name, Sex, Age, SibSp, Parch, Ticket, Fare, Cabin, Embarked) along with the outcome(ie Survived)</dd></dl></li>
+        <br>
+        <li><dl><dt><b>test set(test.csv)</b></dt>
+            <dd>This .csv file contains passengers data(ie Passengerid, Pclass, Name, Sex, Age, SibSp, Parch, Ticket, Fare, Cabin, Embarked)</dd></dl></li>
+    </ul></p>
+
+
+<p><h3>My Approach:</h3> 
+    &emsp;&emsp;&emsp;<b>Programming Language:</b> Python </p>
+    &emsp;&emsp;&emsp;Built two predictive models 
+<br/> <br/> 
+<ol>
+    <li>										
+        <b>With RandomForestClasssifier:	</b>									
+        Implemented a machine learning predictive model for titanic disaster to predict the passenger survival rate using RandomForestClasssifier
+        <br>Kaggle Score: <span style="color:rgba(116, 5, 5, 0.731)"><b>0.77511</b></span>
+        <br><br>
+        <a href="/Codes/RandomForest_titianic.html" readonly>&emsp;&emsp;&emsp;&emsp;&emsp;<img src = "/images/titanic_randomforest.jpg" width="='500px" height="400px"></a>
+
+    </li>
+    <br>
+    <li>										
+        <b>With XGBoostClasssifier:	</b>									
+        Implemented a machine learning predictive model for titanic disaster to predict the passenger survival rate using XGBoostClasssifier with tuned hyperparameters 
+        <br>Kaggle Score: <span style="color:rgba(116, 5, 5, 0.731)"><b>0.77990</b></span>										
+        <br/>
+        <dl>
+            <dt>
+                <br><b>Contribution:</b>
+            </dt>
+            <dd>
+                <ol>
+                    <li>Visualized the relationship between each feature with class</li>
+                    <li>Identified 3 more useful features other than used features in  RandomForestClasssifier </li>
+                    <li>Converted string values of features('Sex', 'Embarked') to numeric values by using replace()</li>
+                    <li>Tuned hyperparameters (n_estimators, learning_rate, max_depth, colsample_bytree) by using grid search for XGBoost hyperparameters.
+                        <br><span style="color:rgb(249, 124, 8)"><b>Credit :</b></span> <a href="https://towardsdatascience.com/xgboost-fine-tune-and-optimize-your-model-23d996fab663">towardsdatascience</a>
+                    </li>
+                </ol>
+            </dd>
+        </dl>
+        <br><a href="/Codes/XGBoost_model_titanic.html">&emsp;&emsp;&emsp;&emsp;&emsp;<img src = "/images/titanic_randomforest.jpg" width="='500px" height="400px"> </a>
+    </li>
+</ol>
+
+<h3>GitHub Code:</h3> &emsp;&emsp;&emsp;<a href="https://github.com/svkrishnaveni/Kaggle-Competition---Titanic---Machine-Learning-from-Disaster">Click here</a>

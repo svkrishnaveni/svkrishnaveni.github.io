@@ -1,0 +1,41 @@
+<div style='margin-left:50px;margin-right:50px'>
+    <center><h1>Image classification for Caltech101 | Airplanes, Motorbikes & Schooners dastaset</h1></center
+    <p><h3>Challange:</h3>&emsp;&emsp;&emsp; Multiclass image classification for Caltech101 | Airplanes, Motorbikes & Schooners dastaset using CNN and tensorflow 2.0.</p>
+
+    <p><h3>Dataset Description:</h3>&emsp;&emsp;&emsp;Dataset contains following 3 classes of non-uniform 2D images with different resolutions:
+        <ol>
+            <li>Airplanes : 800 images</li>
+            <li>Motorbikes : 798 images</li>
+            <li>Schooner : 63 images</li>
+        </ol>
+
+    <h3>This blog post covers the following aspects of multiclass image classification using 2D CNN</h3>
+    <ol>
+        <li>Building a 2D CNN based image classifier for multi class labels using Tensorflow 2.0</li>
+        <li>Experiment:  Effect of depth on model performance </li>
+        <li>Experiment:  Effect of drop out fraction on model performance </li>
+        <li>Building model with optimal number of layers and drop out fraction</li>
+    </ol>
+
+    <h3>Contributions</h3>
+    <p style = 'text-align: justify;'>&emsp;&emsp;Implemeneted a 2D CNN model for multi class image classification of Caltech101 dataset containing images of airplanes, motorbikes and schooners.
+        Created a custom function to build CNN models using tensorflow 2.0 with keras functional API with varying number of layers and amount of dropout in the penultimate layer.
+        Conducted a preliminary model exploration with varying depth of CNN model and varying amount of dropout in the penultimate layer.
+        Created a classification report to evaluate the performance of multiclass classification using 'sklearn.metrics.classificationreport'. Used metrics like balanced accuracy, precision, 
+        recall and their weighted averages for unbiased performance evaluation of the model and obtained class wise performances.Created barplots for visualizing the effect on training and 
+        validation performance when varying number of layers and amount of dropout. Built an optimal model by selecting depth of the model(Number of layers) and amount of dropout based on their effect on performance.
+        Using any amount of dropout has resulted in decreased performance when compared to the baseline model. Best performance was observed at a model depth of 3 (2 conv2D layers and 1 Dense layer).
+        Model overfitting was observed at depths greater than 3.</p>
+
+    <h3>Jupyter Notebook</h3>
+    <a href="/Codes/Caltech101_CNN_using_tensorflow.html">&emsp;&emsp;&emsp;&emsp;&emsp;<img src = "/images/caltech101.jpg" width="='500px" height="400px"></a>
+    <h3>GitHub Code:</h3> &emsp;&emsp;&emsp;
+    <a href="https://github.com/svkrishnaveni/Kaggle-Competition---Titanic---Machine-Learning-from-Disaster">Click here</a>
+    <h3>References</h3>
+    <ol>  
+        <li><a href="https://www.tensorflow.org/tutorials/images/classification">Tensorflow Tutorial</a></li>
+        <li><a href = "https://odsc.medium.com/properly-setting-the-random-seed-in-ml-experiments-not-as-simple-as-you-might-imagine-219969c84752">Setting random seed in ML</a></a></li>
+        <li><a href = "https://keras.io/guides/functional_api/">Building a keras model using functional API</a></a></li>
+        <li><a href = "https://matplotlib.org/stable/gallery/lines_bars_and_markers/barchart.html">Creating a grouped barplot with labels</a></a></li>
+    </ol>
+</div>
